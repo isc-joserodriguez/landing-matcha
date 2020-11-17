@@ -31,18 +31,23 @@ header a {
     font-weight: 600;
 }
 
-.controls button {
-    cursor: pointer;
+.button {
     padding: 15px 20px;
     color: white;
+    font-weight: 600;
+    font-size: 14px;
     background-color: #025157;
     border-radius: 8px;
     transition: all .2s ease-in-out;
-    margin-left: 15px;
+    cursor: pointer;
 }
 
-.controls button:hover {
+.button:hover {
     background-color: #67b54b;
+}
+
+.controls a {
+    margin-right: 15px;
 }
 
 .grid-video-container {
@@ -189,7 +194,7 @@ header a {
     border: 1px solid #dadada;
     padding: 40px 18px;
     border-radius: 4px;
-    height: 330px;
+    height: 400px;
 }
 
 .grid-tools-container article img {
@@ -204,7 +209,67 @@ header a {
 .grid-tools-container p {
     font-size: 20px;
     color: #7e7e7e;
-    margin:15px 30px;
+    margin: 15px 30px;
+}
+
+.grid-carousel-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 30px;
+}
+
+.carousel-text {
+    padding: 80px 40px;
+}
+
+.carousel-text h2 {
+    font-size: 55px;
+    color: #025157;
+    font-weight: 1000;
+}
+
+.carousel-text p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.inactive {
+    display: none;
+}
+
+.carousel-item {
+    border-radius: 10px;
+    border: 1px solid #dadada;
+}
+
+.carousel-item>img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.carousel-body {
+    padding: 20px 15px;
+}
+
+.carousel-body>h5 {
+    font-size: 18px;
+    color: #025157;
+}
+
+.carousel-body>h2 {
+    font-size: 22px
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart img {
+    width: 50px;
+    margin: 10px;
 }
 
 @media(max-width: 1052px) {
@@ -242,8 +307,21 @@ header a {
         margin: auto 50px;
     }
     .grid-tools-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         margin: auto 50px;
+    }
+    .grid-tools-container article {
+        padding: 20px 5px;
+        height: 400px;
+    }
+    .grid-carousel-container {
+        grid-template-columns: 1fr;
+    }
+    .carousel-text {
+        order:-1;
+    }
+    .carousel-item {
+        margin: 0px 80px;
     }
 }
 
@@ -257,5 +335,11 @@ header a {
     .grid-brands-container {
         grid-template-columns: repeat(2, 1fr);
         margin: 0px 30px;
+    }
+    .grid-tools-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-tools-container article {
+        height: 300px;
     }
 }
