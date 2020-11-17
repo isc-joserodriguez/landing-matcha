@@ -272,6 +272,115 @@ header a {
     margin: 10px;
 }
 
+.block-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #025157;
+    border-radius: 10px;
+    padding: 80px 84px;
+    color: white;
+    margin: 30px;
+}
+
+.block-footer a {
+    color: #67b54b;
+    text-decoration: none;
+}
+
+.block-footer h3 {
+    font-size: 34px;
+}
+
+.block-footer button {
+    background-color: #67b54b;
+    color: white;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.block-footer h3+p {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.block-footer button+p {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #c8c8c8;
+}
+
+.nav-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+}
+
+.nav-footer-grid h3 {
+    font-size: 13px;
+    color: #025157;
+    margin-bottom: 30px;
+}
+
+.nav-footer-grid p {
+    font-size: 16px;
+    color: #4a4a4a;
+    padding-right: 200px;
+    margin-bottom: 30px;
+}
+.nav-footer-grid input{
+    height: 48px;
+    border: 1px solid #025157;
+}
+input[type="email"] {
+    border-radius: 10px 0px 0px 10px;
+}
+
+input[type="submit"] {
+    background-color: #025157;
+    color:white;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -5px;
+    padding: 15px 20px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links li{
+    list-style: none;
+    margin-bottom:20px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#4a4a4a;
+    transition: all .2s ease-in-out;
+}
+
+.footer-links a:hover{
+    color: #67b54b;
+}
+.footer-copyright{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.iconos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.copyright{
+    text-align: end;
+    margin-right: 15px;
+}
+
 @media(max-width: 1052px) {
     .nav_links {
         display: grid;
@@ -318,10 +427,22 @@ header a {
         grid-template-columns: 1fr;
     }
     .carousel-text {
-        order:-1;
+        order: -1;
     }
     .carousel-item {
         margin: 0px 80px;
+    }
+    .block-footer {
+        flex-direction: column;
+    }
+    .block-footer button {
+        margin-top: 30px;
+    }
+    .nav-footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-links{
+        margin-top: 60px;
     }
 }
 
