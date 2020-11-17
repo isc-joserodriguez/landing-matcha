@@ -378,6 +378,7 @@ input[type="submit"] {
 }
 .copyright{
     text-align: end;
+    align-self: center;
     margin-right: 15px;
 }
 
